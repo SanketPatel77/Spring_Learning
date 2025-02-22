@@ -11,4 +11,10 @@ public class SpringController {
     public String hello(){
         return "index"; // load index.html file
     }
+
+    // this api call the web.html page
+    @GetMapping("/web")
+    public String web(){
+        return "web"; // load web.html
+    }
 }
